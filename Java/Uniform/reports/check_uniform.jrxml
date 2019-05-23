@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="check_uniform" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="71fa3f4b-ed50-47ab-a5b8-aa4ee0aef7d3">
+	<property name="ireport.zoom" value="0.9090909090909091"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="NOTA_ID" class="java.lang.String"/>
+	<parameter name="CONNECTION_NOTA" class="java.lang.Object">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CONNECTION_SYSTEM" class="java.lang.Object">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<title>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="22" width="555" height="20" uuid="0bfed49c-f8cb-4001-baec-2dd14909d5d9"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONFERÊNCIA DE UNIFORME]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="162" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="42" width="260" height="20" uuid="df05ae30-d609-4191-b022-cad291a5114b"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOTA FISCAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="42" width="260" height="20" uuid="fa64f05c-405b-473a-ae41-56c1b304e821"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SISTEMA]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="62" width="260" height="100" uuid="f93fc460-1a06-4d1f-b94f-ee1526d7077b"/>
+				<subreportParameter name="ID_NOTA">
+					<subreportParameterExpression><![CDATA[$P{NOTA_ID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{CONNECTION_NOTA}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "subreport_check_uniforme_note.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="295" y="62" width="260" height="100" uuid="8b8aef10-6271-4b24-87a6-6f1fb492b174"/>
+				<subreportParameter name="ID_NOTA">
+					<subreportParameterExpression><![CDATA[$P{NOTA_ID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{CONNECTION_SYSTEM}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "subreport_check_uniforme_system.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</pageHeader>
+</jasperReport>

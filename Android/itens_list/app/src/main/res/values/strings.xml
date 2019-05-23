@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">items_list</string>
+    <string name="button">Procurar Cidade</string>
+    <string name="id">ID: </string>
+    <string name="name">Nome: </string>
+    <string name="fundation">Fundação: </string>
+    <string name="population">População: </string>
+    <string name="area">Área: </string>
+    <string name="density">Densidade: </string>
+</resources>

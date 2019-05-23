@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">write_xml</string>
+    <string name="empty"> </string>
+    <string name="number_default">1</string>
+    <string name="name">Nome: </string>
+    <string name="phone">Telefone: </string>
+    <string name="adress">Endereço: </string>
+    <string name="btnAdd">Adicionar</string>
+    <string name="btnClean">Limpar</string>
+    <string name="btnSee">Visualizar</string>
+    <string name="btnAddOrder">[+] Compra</string>
+</resources>

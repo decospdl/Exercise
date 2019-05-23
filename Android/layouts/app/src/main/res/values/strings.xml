@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">layouts</string>
+    <string name="enrollment">Matricula: 4570</string>
+    <string name="name">Nome: João das Couves</string>
+    <string name="departament">Departamento: Operacional</string>
+    <string name="function">Função: Cobrador</string>
+</resources>
