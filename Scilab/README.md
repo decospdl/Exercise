@@ -1,2 +1,2 @@
-# d3c0de-Scilab
+# Scilab
 Métodos e funções para execução de cálculos para Scilab.
