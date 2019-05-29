@@ -9,6 +9,19 @@ function [P] = P(x)
     P = ys(1) * L(1,x) + ys(2) * L(2,x) + ys(3) * L(3,x) + ys(4) * L(4,x)
 endfunction
 
+function Polinomial(k)
+    x = poly(0,'x')
+    cima = 1
+    baixo = 1
+    for i = 1 : row
+        if i <> k then
+            cima = (x - xs(i)) * cima
+            baixo = (xs(k) - xs(i)) * baixo
+        end
+    end
+    printf("L%d Polinomial ",k)
+    disp(baixo,cima)
+endfunction
 
 function [L] = L(k,x)
     cima = 1
@@ -19,7 +32,12 @@ function [L] = L(k,x)
             baixo = (xs(k) - xs(i)) * baixo
         end
     end
+    printf("L%d ",k)
     printf("L%d = %.4f / %.4f \n", k, cima, baixo)
     L = cima/baixo
 endfunction
-disp(P(0.3))
+
+Polinomial(1)
+Polinomial(2)
+Polinomial(3)
+Polinomial(4)
