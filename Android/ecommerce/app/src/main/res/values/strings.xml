@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Ecommerce</string>
+    <string name="login_user">Usuário</string>
+    <string name="login_pass">Senha</string>
+    <string name="login_btn">Login</string>
+    <string name="car_btn">Carrinho</string>
+    <string name="list_btn">Pedidos</string>
+    <string name="items_btn">Busca Itens</string>
 </resources>

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
 MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\226aad3e3aed690d6732d77541a52cfb\AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1adfb66fd2d198b58849ea41b2a51678\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\da10b72f79df90aa97e598f8f8a9e15e\AndroidManifest.xml:2:1-11:12
@@ -32,29 +32,29 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Administrator\.grad
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\372a996608a965fb8c61524281006f35\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d49b4307f786b2021f4405f81fb99ae4\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8805958d710bb08c71fdb519e36adce1\AndroidManifest.xml:17:1-22:12
-INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:3:5-31
-		INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:4:5-66
+ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:4:5-66
 	android:name
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:5:5-21:19
+ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:5:5-21:19
 MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\226aad3e3aed690d6732d77541a52cfb\AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\226aad3e3aed690d6732d77541a52cfb\AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\da10b72f79df90aa97e598f8f8a9e15e\AndroidManifest.xml:9:5-20
@@ -66,37 +66,37 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Administra
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8afdcb415aabdb8a8d770d837606e80b\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:11:9-40
 activity#br.sc.itens_list.MainActivity
-ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:12:9-20:20
+ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:12:9-20:20
 	android:screenOrientation
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:13:13-49
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:13:13-49
 	android:name
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:14:13-41
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:14:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml:18:27-74
 uses-sdk
-INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
-INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
 MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\226aad3e3aed690d6732d77541a52cfb\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\226aad3e3aed690d6732d77541a52cfb\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1adfb66fd2d198b58849ea41b2a51678\AndroidManifest.xml:20:5-44
@@ -153,13 +153,13 @@ MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Administrator\.gradle\cac
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d49b4307f786b2021f4405f81fb99ae4\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8805958d710bb08c71fdb519e36adce1\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8805958d710bb08c71fdb519e36adce1\AndroidManifest.xml:20:5-44
-INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
-INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
-		ADDED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Codes\Android\itens_list\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Documents\Codes\Exercises\Android\itens_list\app\src\main\AndroidManifest.xml
