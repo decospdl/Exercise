@@ -1,8 +1,16 @@
 package br.sc.ecommerce.classes;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
+
 import java.util.ArrayList;
 
 public class Item {
+
+    public static ArrayList<Item> items = new ArrayList<>();
+
+    private int id;
     private double valor;
     private String detalhes;
     private String nome;
@@ -37,26 +45,33 @@ public class Item {
         this.nome = nome;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public static ArrayList<String> getListNamesItems(){
         ArrayList<String> itemsNames = new ArrayList<>();
-        ArrayList<Item> items = getListItems();
         for(Item item : items){
             itemsNames.add(item.nome);
         }
         return itemsNames;
     }
 
-    public static ArrayList<Item> getListItems() {
-        Item i1 = new Item(2.55, "Maçã do sul do Pará", "Maçã");
-        Item i2 = new Item(3.55, "Laranja dos Monges do Mestre Miague", "Laranja");
-        ArrayList<Item> items = new ArrayList<>();
-        items.add(i1);
-        items.add(i2);
-        return items;
+    public static void refreshListItem() {
+        Runnable runnable = () -> {
+            String result = JsonManager.sendGet( "http://10.7.25.222:8080/Service/items");
+            Gson gson = new GsonBuilder().create();
+            items =  gson.fromJson(result,new TypeToken<ArrayList<Item>>() {}.getType());
+        };
+        Thread thread = new Thread(runnable);
+        thread.start();
     }
 
     public static Item getItemByNome(String nome){
-        ArrayList<Item> items = getListItems();
         for(Item item : items){
             if(item.getNome().equals(nome)){
                 return item;

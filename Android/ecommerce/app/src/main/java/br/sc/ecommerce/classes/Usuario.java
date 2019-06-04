@@ -1,16 +1,14 @@
 package br.sc.ecommerce.classes;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
-import java.net.URL;
-import java.net.URLEncoder;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
+
 import java.util.ArrayList;
 
 public class Usuario {
+    public static ArrayList<Usuario> users = new ArrayList<>();
+
     private int codigoSeguranca;
     private String dataValidade;
     private String login;
@@ -67,39 +65,17 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public static ArrayList<Usuario> getListUsuario() {
-        try {
-            String resourceURI="http://localhost:8080/Service/usuario";
-//            String httpParameters = "?id="+ URLEncoder.encode("123","UTF-8") + "&titulo="+ URLEncoder.encode("Aula sobre REST", "UTF-8");
-            String formatedURL=resourceURI+ httpParameters;;
-            URL url = new URL(formatedURL);
-            HttpURLConnection con = (HttpURLConnection) url.openConnection();
-            con.setRequestProperty("accept", "XML");
-            con.setRequestMethod("PUT");
-            InputStream is=con.getInputStream();
-            String respose = convertStreamToString(is);
-            System.out.println(respose);
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (ProtocolException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-        Usuario u1 = new Usuario(1, "11/12/2019", "deco", "55599", "1234", null);
-        Usuario u2 = new Usuario(2, "14/09/2019", "kah", "99555", "4321", null);
-        ArrayList<Usuario> users = new ArrayList<>();
-        users.add(u1);
-        users.add(u2);
-        return users;
+    public static void refreshListUsuario() {
+        Runnable runnable = () -> {
+            String result = JsonManager.sendGet( "http://10.7.25.222:8080/Service/usuarios");
+            Gson gson = new GsonBuilder().create();
+            users =  gson.fromJson(result,new TypeToken<ArrayList<Usuario>>() {}.getType());
+        };
+        Thread thread = new Thread(runnable);
+        thread.start();
     }
 
     public static Usuario getUsarioByCodigoSeguranca(int codigoSeguranca){
-        ArrayList<Usuario> users = getListUsuario();
         for(Usuario user : users){
             if(user.getCodigoSeguranca() == codigoSeguranca){
                 return user;

@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getDataTableWikipedia() {
         try {
-            Document doc = Jsoup.connect("https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_de_Santa_Catarina")
+            Document doc = Jsoup.connect("https://http://localhost:8080/Service/usuario")
                     .get();
             Elements table = doc.select("table.wikitable tr:gt(0)");
             createArrayCities(table);

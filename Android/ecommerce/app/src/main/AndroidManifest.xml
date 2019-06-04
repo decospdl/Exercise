@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.EcommerceActivity"></activity>
+        <activity android:name=".activities.ConfigActivity"></activity>
+        <activity android:name=".activities.PedidoActivity" />
+        <activity android:name=".activities.CarActivity" />
+        <activity android:name=".activities.EcommerceActivity" />
         <activity
             android:name=".activities.LoginActivity"
             android:screenOrientation="portrait">

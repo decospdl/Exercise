@@ -21,6 +21,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="br.sc.ecommerce.activities.ConfigActivity" />
+        <activity android:name="br.sc.ecommerce.activities.PedidoActivity" />
+        <activity android:name="br.sc.ecommerce.activities.CarActivity" />
         <activity android:name="br.sc.ecommerce.activities.EcommerceActivity" />
         <activity
             android:name="br.sc.ecommerce.activities.LoginActivity"
@@ -31,6 +34,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="br.sc.ecommerce.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

@@ -10,14 +10,15 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import br.sc.ecommerce.R;
+import br.sc.ecommerce.classes.Item;
 import br.sc.ecommerce.classes.Usuario;
 
 public class LoginActivity extends AppCompatActivity {
+    public static Usuario userValid;
     public static final String USER_INVALID = "Usuário inválido!";
     public static final String PASS_INVALID = "Senha inválida!";
 
-    private ArrayList<Usuario> users = Usuario.getListUsuario();
-    private Usuario userValid;
+    private ArrayList<Usuario> users;
     private EditText edtUser, edtPass;
     private TextView txtMsg;
     private Button btnLogin;
@@ -27,8 +28,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Usuario.refreshListUsuario();
+        Item.refreshListItem();
         initComponent();
         initListinner();
+
     }
 
     private void initComponent(){
@@ -41,13 +45,12 @@ public class LoginActivity extends AppCompatActivity {
 
     private void initListinner(){
         btnLogin.setOnClickListener((v -> {
+            users = Usuario.users;
             if(!existUser()){
                 txtMsg.setText(USER_INVALID);
             }else if(!validPassword()){
                 txtMsg.setText(PASS_INVALID);
             }else{
-                System.out.println(userValid.getCodigoSeguranca());
-                intentCommerce.putExtra("userCode", String.valueOf(userValid.getCodigoSeguranca()));
                 startActivity(intentCommerce);
             }
         }));
