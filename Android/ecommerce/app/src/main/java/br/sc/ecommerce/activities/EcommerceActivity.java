@@ -21,10 +21,10 @@ import in.galaxyofandroid.spinerdialog.SpinnerDialog;
 
 public class EcommerceActivity extends AppCompatActivity {
 
-    private ArrayList<ItemPedido> itemPedidos;
-    private ArrayList<PedidoCompra> compras;
+    public static ArrayList<ItemPedido> itemPedidos;
+    public static ArrayList<PedidoCompra> compras;
     private TextView txt_user, txt_card, txt_item_name, txt_item_descricao, txt_item_valor, txt_qtd;
-    private Button btn_buy, btn_minus, btn_plus, btn_search, btn_car;
+    private Button btn_buy, btn_minus, btn_plus, btn_search, btn_car, btn_list;
     private SpinnerDialog spinnerDialog;
     private Item itemSelected;
     private Intent intentCar, intentPedido, intentConfig;
@@ -35,7 +35,13 @@ public class EcommerceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ecommerce);
         initComponent();
         initListinner();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
         refreshCarrinho();
+        refreshPedidos();
     }
 
     private void initListinner() {
@@ -74,7 +80,7 @@ public class EcommerceActivity extends AppCompatActivity {
             refreshCarrinho();
         });
 
-        btn_car.setOnClickListener(v->{
+        btn_car.setOnClickListener(v -> {
             startActivity(intentCar);
         });
 
@@ -84,6 +90,11 @@ public class EcommerceActivity extends AppCompatActivity {
     private void refreshCarrinho() {
         String aux = "CARRIONHO (" + itemPedidos.size() + ")";
         btn_car.setText(aux);
+    }
+
+    private void refreshPedidos() {
+        String aux = "PEDIDOS (" + compras.size() + ")";
+        btn_list.setText(aux);
     }
 
     private void initComponent() {
@@ -98,13 +109,16 @@ public class EcommerceActivity extends AppCompatActivity {
         btn_minus = findViewById(R.id.btn_minus);
         btn_plus = findViewById(R.id.btn_plus);
         btn_car = findViewById(R.id.btn_car);
+        btn_list = findViewById(R.id.btn_list);
         intentCar = new Intent(getBaseContext(), CarActivity.class);
-        intentPedido = new Intent(getBaseContext(),PedidoActivity.class);
+        intentPedido = new Intent(getBaseContext(), PedidoActivity.class);
         intentConfig = new Intent(getBaseContext(), ConfigActivity.class);
 
         txt_user.setText(LoginActivity.userValid.getLogin());
         txt_card.setText(LoginActivity.userValid.getNumeroCartao());
         spinnerDialog = new SpinnerDialog(EcommerceActivity.this, Item.getListNamesItems(), "Selecione um Item");
         itemPedidos = new ArrayList<>();
+        compras = new ArrayList<>();
     }
+
 }

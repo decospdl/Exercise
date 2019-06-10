@@ -1,4 +1,4 @@
-#Mon Jun 03 19:08:03 BRT 2019
-base.0=C\:\\Users\\Administrator\\Documents\\Codes\\Exercise\\Android\\ecommerce\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+#Sun Jun 09 22:04:12 BRT 2019
+base.0=C\:\\Users\\Administrator\\Documents\\Codes\\Exercises\\Android\\ecommerce\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
 path.0=classes.dex
 renamed.0=classes.dex

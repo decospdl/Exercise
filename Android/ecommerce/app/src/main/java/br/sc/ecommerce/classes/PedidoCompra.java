@@ -1,19 +1,19 @@
 package br.sc.ecommerce.classes;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 
 public class PedidoCompra {
 
-    private LocalDate data;
+    private GregorianCalendar data;
     private ArrayList<ItemPedido> itemPedidos;
     private Usuario usuario;
 
-    public LocalDate getData() {
+    public GregorianCalendar getData() {
         return data;
     }
 
-    public void setData(LocalDate data) {
+    public void setData(GregorianCalendar data) {
         this.data = data;
     }
 

@@ -63,7 +63,7 @@ public class Item {
 
     public static void refreshListItem() {
         Runnable runnable = () -> {
-            String result = JsonManager.sendGet( "http://10.7.25.222:8080/Service/items");
+            String result = JsonManager.sendGet( "http://192.168.15.11:8080/Service/items");
             Gson gson = new GsonBuilder().create();
             items =  gson.fromJson(result,new TypeToken<ArrayList<Item>>() {}.getType());
         };

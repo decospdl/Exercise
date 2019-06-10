@@ -1065,6 +1065,8 @@ id blocking
 id bottom
 id btn_buy
 id btn_car
+id btn_car_cancel
+id btn_car_confim
 id btn_list
 id btn_login
 id btn_minus
@@ -1134,6 +1136,7 @@ id line3
 id list
 id listMode
 id list_item
+id ll_car
 id masked
 id message
 id middle
@@ -1170,6 +1173,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id searchBox
 id search_badge
@@ -1222,6 +1226,8 @@ id textView11
 id textView2
 id textView3
 id textView4
+id textView7
+id textView8
 id textView9
 id text_input_password_toggle
 id textinput_counter
@@ -1239,6 +1245,8 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id txt_car_qtd
+id txt_car_total
 id txt_card
 id txt_item_descricao
 id txt_item_name
